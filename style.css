@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Тёмно-синий фон */
+    color: #fff; /* Белый текст */
+    text-align: center;
+    background-image: url('https://images6.fanpop.com/image/photos/39400000/Phineas-Ferb-background-phineas-and-ferb-39466596-1920-1080.jpg'); /* Замени на URL фонового изображения */
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон для контента */
+    border-radius: 10px;
+}
+h1 {
+    color: #b9a0e0; /* Светло-фиолетовый цвет для заголовка */
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+}
+.image {
+    margin: 20px 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation-name: down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes down {
+    from{transform: translateX(100px);}
+    to{transform: translateX(-100px);}
+}
+
+a {
+    margin-top: 30px;
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #b9a0e0; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+    align-items: center;
+    transition-duration: 2s;
+}
+
+a:hover {
+    transform: scale(1.2, 1);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #b9a0e0;
+}
